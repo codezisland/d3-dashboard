@@ -1,0 +1,5 @@
+ # jetbrain IDEs
+/.idea
+
+# Dependency directories
+node_modules/
