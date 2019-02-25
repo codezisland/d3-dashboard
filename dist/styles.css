@@ -1,0 +1,98 @@
+.clearAfter:after {
+  clear: both;
+  display: table;
+  content: " ";
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #999999;
+  padding: 0;
+  font-size: 1rem;
+}
+p {
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+.chart-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.chart-w {
+  text-align: center;
+  font-size: 20px;
+  padding: 2.5em 1em 0.25em;
+  margin: 0 auto 10px;
+  width: 320px;
+  position: relative;
+  min-height: 320px;
+}
+.chart-w .line {
+  fill: none;
+  stroke-width: 2px;
+}
+.chart-w .target-line {
+  stroke: #999999;
+  stroke-width: 2px;
+}
+@media (min-width: 480px) {
+  .chart-w {
+    width: 420px;
+  }
+}
+.chart-w-label {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  fill: #999999;
+  font-weight: 300;
+  text-anchor: middle;
+  alignment-baseline: middle;
+}
+.chart-w-total {
+  font-size: 1.7em;
+  fill: #303030;
+  text-anchor: middle;
+  alignment-baseline: middle;
+}
+.chart-w-legend {
+  border-bottom: 1px solid #DCDCDC;
+}
+.chart-w-legend:after {
+  clear: both;
+  display: table;
+  content: " ";
+}
+.chart-w-legend > div:first-child {
+  text-align: left;
+}
+.chart-w-legend > div:last-child {
+  text-align: right;
+}
+.chart-w-legend-i {
+  float: left;
+  width: 50%;
+  font-size: 18px;
+}
+.chart-w-legend-i-title {
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.chart-w-legend-i-value {
+  color: #999999;
+  font-weight: 300;
+}
+.chart-w-legend-i-value strong {
+  color: #303030;
+  display: inline-block;
+  margin-right: 1em;
+  font-weight: 400;
+}

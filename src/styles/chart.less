@@ -1,0 +1,85 @@
+.chart-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.chart-w {
+  text-align: center;
+  font-size: 20px;
+  padding: 2.5em 1em 0.25em;
+  margin: 0 auto 10px;
+  width: 320px;
+  position: relative;
+  min-height: 320px;
+
+  .line {
+    fill: none;
+    stroke-width: 2px;
+  }
+
+  .target-line{
+    stroke: @color; //#ADADAA;
+    stroke-width: 2px;
+  }
+}
+
+@media(min-width: 480px){
+  .chart-w {
+    width: 420px;
+  }
+}
+
+.chart-w-label {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  fill: @color;
+  font-weight: 300;
+  text-anchor: middle;
+  alignment-baseline: middle;
+}
+
+.chart-w-total {
+  font-size: 1.7em;
+  fill: @color-black;
+  text-anchor: middle;
+  alignment-baseline: middle;
+}
+
+.chart-w-legend {
+  border-bottom: 1px solid #DCDCDC;
+  .clearAfter;
+
+  & > div:first-child {
+    text-align: left;
+  }
+
+  & > div:last-child {
+    text-align: right;
+  }
+}
+
+.chart-w-legend-i {
+  float: left;
+  width: 50%;
+  font-size: 18px;
+}
+
+.chart-w-legend-i-title {
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.chart-w-legend-i-value {
+  color: @color;
+  font-weight: 300;
+
+  strong {
+    color: @color-black;
+    display: inline-block;
+    margin-right: 1em;
+    font-weight: 400;
+  }
+
+}

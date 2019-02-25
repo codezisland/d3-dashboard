@@ -15,6 +15,10 @@ module.exports = {
              {
                 from: path.join(__dirname, '../src/index.html'),
                 to: path.join(__dirname, '../dist/')
+            },
+            {
+                from: path.join(__dirname, '../src/styles/styles.css'),
+                to: path.join(__dirname, '../dist/styles.css')
             }
         ])
     ]
